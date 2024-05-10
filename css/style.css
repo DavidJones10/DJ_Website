@@ -120,7 +120,7 @@ body {
 .skill {
   text-align: center;
   display: inline-block;
-  margin-left: 30px;
+  margin: 2%;
   border: 2px solid #000; /* Add border around each skill */
   border-radius: 10px; /* Optional: Add rounded corners to the border */
   padding: 3px;
@@ -132,6 +132,7 @@ body {
   font-family: serif;
   transition: transform 0.5s ease; /* Added transform transition */
 }
+
 .skill:hover {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 0.3s ease, transform 0.5s ease; /* Added transform transition */
@@ -451,18 +452,22 @@ body {
   padding: 2%;
 }
 .projectContent ul li{
-  font-size: 150%;
+  font-size: 100%;
   text-align: left;
   justify-content: left;
   color: #94ddd7; 
   padding-bottom: 0%;
 }
-.projectContent ul li p{
+.projectContent ul li p,
+.projectContent ul li a
+{
   padding-bottom: 0px;
+  font-size: 20%;
 }
 
 .projectContent ul{
   justify-content: left;
+  position: relative;
 }
 
 .projectItem h2,
