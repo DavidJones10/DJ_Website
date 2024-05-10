@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>David Jones/Boxlight/EZ DSP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/superslides.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="slides">
+      <div class="overlay"></div>
+      <div class="slides-container">
+        <img src="img/EZ DSP Logo.png" alt="" />
+        <img src="img/TCIF_Album_Cover.jpg" alt="" />
+        <img src="img/I_GET_LOST_SOMETIMES.jpg" alt="" />
+        <img src="img/SL_Album_Cover.jpg" alt="" />
+      </div>
+      <div class="titleMessage">
+        <div class="heading">
+          <p style="font-size: 500%;"class="main">David Jones / Boxlight / EZ DSP</p>
+          <p style="font-size: 300%;" class="sub typed"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navigation" class="navbar navbar-expand-lg">
+      <a style="padding-left: 10px;"class="navbar-brand" href="#">David Jones</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about"
+              >About Me <span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#music">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <div id="about" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img class="aboutImage" src="img/DavidJones.png" alt="" />
+          </div>
+
+          <div class="col-md-7">
+            <h4 class="aboutMe">About Me</h4>
+            <p>
+              I am an audio programmer and musician who loves building systems that 
+              aid in the creation of music. I have built systems in C++, python, 
+              java, javascript, JUCE, MaxMSP, TensorFlow, PyTorch, and Pure Data. 
+              I have deployed these systems over a variety of platforms including 
+              VSTs, the web, Daisy Seed (bare metal), Arduino, Raspberry Pi, Unity, 
+              and Unreal Engine. I have built a variety of embedded systems on both 
+              bare metal and RTOS systems. These systems have ranged from guitar 
+              effects processing units to gestural MIDI controllers to a drum machine 
+              and looper instrument. I have built, trained, and deployed several 
+              Machine Learning models, primarily using deep learning techniques. 
+              I have deployed these models on the web using websockets and in Ableton 
+              Live using Max for Live devices. I also enjoy sound design and love modular 
+              synthesis techniques in both the analog and digital domains. I have designed 
+              games in Unity, Processing, and P5.js with both live score generation 
+              and traditional sound design techniques.
+            </p>
+
+            <p>
+              I began my journey as a musician in my senior year of high school when the 
+              pandemic hit in 2020. I, like many, began producing music and quickly fell in love 
+              with the entire process. I fell so deeply in love that after only 
+              about a year of making music, I knew that this was a passion I would never 
+              lose. As such, I applied to the Music Technology program a Georgia Tech and 
+              I got in! After a semester of imposter syndrome in all of my music-related 
+              classes, I finally had my first class on audio programming. This class opened
+              my eyes to the beauty that can be found in programming, especially in programming
+              for audio. As my college journey progressed, I developed an extreme passion for 
+              audio programming, moving from project to project, trying to learn how to deploy 
+              audio on every platform (i.e. plugins, web, embedded, etc.). In this process, 
+              I learned that my passion for programming and engineering extends far beyond 
+              just audio. As I continue to develop software and devices, I become increasingly 
+              obsessed with the unique set of problems that can only be solved through the design 
+              of complex systems. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Projects -->
+     <div id="projects" class="projectsSection section">
+      <div class="col-md-12 text-center">
+        <h1>Projects</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-md-6">
+            <div class="projectItem" style="background-image: url('./img/The-Kitchen-Enclosure.png');">
+              <div class="projectContent">
+                <h2>The Kitchen</h2>
+                <p>
+                  The Kitchen is a hybrid musical instrument that seemlessly combines the functionalities of a drum
+                  machine and a looper. The Kitchen is designed for live performance, incorporating a 
+                  variety of features that encourage improvisation through selective randomization. The instrument
+                  was designed using RNBO embedded on a Raspberry Pi. It is the first instrument of its 
+                  kind (in both audio funtionality and control dimensionality) to be developed using RNBO. This project
+                  was carried out in an effort to prove the efficacy of RNBO as a development environment for complex 
+                  musical instruments.
+
+                </p>
+                <p>Skills: Raspberry Pi (RTOS), RNBO, Python, Linux, OSC, Fusion 360, 
+                  Shell Script, Multiprocessing, CircuitPython, SPI, soldering</p>
+                <div class="projectLinks">
+                  <a href="https://github.com/DavidJones10/The-Kitchen">Source Code</a>
+                  <a href="https://www.youtube.com/watch?v=1aXgyqzfzg8&ab_channel=DeskJocky">Demo Video</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Project 2 -->
+          <div class="col-md-6">
+            <div class="projectItem" style="background-image: url('./img/EZ_Dist_UI.png');">
+              <div class="projectContent">
+                <h2>EZ Dist</h2>
+                <p>
+                  EZ Dist is a distortion and overdrive plugin that uses physical modeling 
+                  to produce accurate simulations of the circuits that are in many distortion 
+                  and overdrive pedals. This project takes inspiration from 
+                  <a href="https://ccrma.stanford.edu/~dtyeh/papers/yeh07_dafx_distortion.pdf">this paper</a> on 
+                  physical modeling. The circuits are simulated by separating the entire circuit into blocks, 
+                  finding the transfer function of each block, and using the bilinear transform to digitize
+                  the analog filter. 
+                </p>
+                <p>Skills: C++, JUCE, DSP, Physical Modeling, UI/UX Design</p>
+                <div class="projectLinks">
+                  <a href="https://github.com/DavidJones10/EZ_Dist">Source Code</a>
+                  <a href="https://www.youtube.com/watch?v=MwwqMA6-xPY&ab_channel=BoxlightMusic">Demo Video</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Project 3 -->
+          <div class="col-md-6">
+            <div class="projectItem" style="background-image: url('./img/RustSampler_GUI.png');">
+              <div class="projectContent">
+                <h2>Rust Sampler</h2>
+                <p>
+                  Rust sampler is a VST3 audio plugin and crate built in Rust. The internal sampler
+                  engine has ADSR, sustain looping with two modes and optional crossfading, three different
+                  types of samplers, and file loading for wav and sfz files. The RustSampler crate contains all
+                  of the sampler engine and voice structs that would be necessary to build a sampler
+                  using rust. There is also very thorough inline documentation and helper functions 
+                  for almost anything a sampler might need.  
+                </p>
+                <p>Skills: Rust, Github Project Management, DSP, API Design, Multithreading</p>
+                <div class="projectLinks">
+                  <a href="https://github.com/DavidJones10/rust-sampler">Source Code</a>
+                  <a href="https://youtu.be/wFT_zyIPOtI">Demo Video</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Project 4 -->
+          <div class="col-md-6">
+            <div class="projectItem" style="
+            background-image: url('./img/EZ\ DSP\ Logo.png');
+            background-size: cover;
+            ">
+              <div class="projectContent">
+                <h2>EZ DSP</h2>
+                <p>EZ DSP is a portable, fast, low-footprint audio effects library written in 
+                  C++. EZ DSP is design to be usable in most audio processing contexts as all of
+                  its processors run on a sample-by-sample basis. So far, the library has been tested
+                  in JUCE, directly using CPAL, and on the daisy seed microcontroller. Each audio processing
+                  object is designed to be very easy to understand and modify as developers may see fit.
+                  As such, documentation is extensive and variable names are meant to be as explicit as possible.</p>
+                <p>Skills: C++, API Development, Unit Testing, Git, DSP</p>
+                <div class="projectLinks">
+                  <a style="margin-left: 40%;"
+                  href="https://github.com/DavidJones10/EZ_DSP">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="row">
+            <!-- Project 5 -->
+            <div class="col-md-6">
+              <div class="projectItem" style="background-image: url('./img/DRUNNK_AI_UI.png');">
+                <div class="projectContent">
+                  <h2>DRUNNK AI</h2>
+                  <p>
+                  DRUNNK AI is an interactive website designed to allow users to reimagine 
+                  and resynthesize any sound they please through the use of "games." Each "game" is 
+                  designed to interact with the sound in different ways. When a user selects
+                  a file or creates a recording, that subsequent audio file is sent to a 
+                  WebSockets server that extracts the inferences from each model and sends the 
+                  esultant audio back to the site's front end. Once the audio is loaded,
+                  the user is free to interact with the file in a virtually infinite number of ways,
+                  using any combination of the "games" with the site's buit-in audio effects. 
+                  </p>
+                  <p>Skills: Python, TensorFlow, Pytorch, Deep Learning, RAVE, WebSockets, p5.js
+                  </p>
+                  <div class="projectLinks">
+                    <a href="https://github.com/DavidJones10/DRUNNK_AI">Source Code</a>
+                    <a href="https://youtu.be/8SznzAHguCc">Demo Video</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Project 6 -->
+            <div class="col-md-6">
+              <div class="projectItem" style="
+              background-image: url('./img/LoopFx_Schematic.png');
+              background-size: cover;
+              ">
+                <div class="projectContent">
+                  <h2>LoopFx</h2>
+                  <p>
+                    LoopFx is a looper and multi-effects guitar pedal built using the Daisy Seed 
+                    embedded platform for music. It has a modular signal chain that can be altered
+                    using an encoder. The device has six rotary potentiometers that can be used to change 
+                    the selected effect. There is a display with a very simple user interface for easy 
+                    navigation through the effect parameters and the various modes. 
+                  </p>
+                  <p>Skills: C++, STM32, Bare-Metal, Git, DSP, Arm, EasyEDA, i2c, soldering</p>
+                  <div class="projectLinks">
+                    <a style="margin-left: 40%;"
+                    href="https://github.com/DavidJones10/LoopFx">Source Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+         <!-- Project 6 -->
+      <div class="col-md-6">
+        <div class="projectItem" style="
+        width: 200%;
+        background-image: url('./img/SoundByke-In-Game.png');
+        background-size: cover;
+        ">
+          <div style="text-align: center;" class="projectContent">
+            <h2>Other Projects</h2>
+              <ul>
+                <li>EZ-DLay, EZ-Chorus, EZ-Distortion- Simple audio effect plugins built with JUCE.</li>
+                  <div style="margin-right: 20%;"class="projectLinks">
+                    <a href="https://github.com/DavidJones10/EZ-DLay">EZ-DLay</a>
+                    <a href="https://github.com/DavidJones10/EZ_Chorus">EZ-Chorus</a>
+                    <a href="https://github.com/DavidJones10/EZ-Distortion">EZ-Distortion</a>
+                  </div>
+                  <p>Skills: C++, DSP, JUCE</p>
+                <li>PolyGone- A 3-dimensional platformer game that looks and feels like a 2-dimensional platformer. 
+                  Uses generative audio using LibPD and Unity. </li>
+                  <div cstyle="margin-right: 20%;"lass="projectLinks">
+                    <a href="https://youtu.be/yaaK4N6oDvg">Demo Video</a>
+                  </div>
+                  <p>Skills: C#, Unity, Pure Data, libPd, FMOD, Sound Design</p>
+                <li>SoundByke- A virtual audio-visual installation that lets users ride a bike through a city with algorithmically 
+                  generated pieces for each city block.</li>
+                  <div style="margin-right: 16%;" class="projectLinks">
+                    <a href="https://youtu.be/To8TQ0hlQn0">Demo Video</a>
+                  </div>
+                  <p>Skills: C#, Unity, Pure Data, libPd, FMOD, Sound Design</p>
+                <li>Max For Live Devices- Various instruments and MIDI devices. </li>
+                <div style="margin-right: 16%;" class="projectLinks">
+                  <a href="https://github.com/DavidJones10/Max-MSP-stuff">Source Code</a>
+                </div>
+                <p>Skills: MaxMSP, DSP, Sound Design, Instrument Design</p>
+              <li>Bubble Run- An arcade-style audio driven game built in Processing.</li>
+                <div style="margin-right: 16%;" class="projectLinks">
+                  <a href="https://github.com/DavidJones10/Bubble-Run">Source Code</a>
+                </div>
+                <p>Skills: Processing, Multithreading, UI Design</p>
+              </ul> 
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="skillsSection">
+      <div class="col-md-12 text-center">
+        <h1>SKILLS</h1>
+      </div>
+      <div class="programmingSection">
+        
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2>Programming Languages/Tools</h2>
+            </div>
+              <div class="skill">
+                <h3>C++</h3>
+              </div>
+
+              <div class="skill">
+                <h3>C</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Python</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Rust</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Matlab</h3>
+              </div>
+              <div class="skill">
+                <h3>javascript</h3>
+              </div>
+              <div class="skill">
+                <h3>MaxMSP</h3>
+              </div>
+              <div class="skill">
+                <h3>C#</h3>
+              </div>
+              <div class="skill">
+                <h3>Shell Script</h3>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+            </div>
+              <div class="skill">
+                <h3>git</h3>
+              </div>
+
+              <div class="skill">
+                <h3>VSCode</h3>
+              </div>
+
+              <div class="skill">
+                <h3>XCode</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Linux</h3>
+              </div>
+
+              <div class="skill">
+                <h3>MacOS</h3>
+              </div>
+              <div class="skill">
+                <h3>CMake</h3>
+              </div>
+              
+              </div>
+          </div>
+      </div>
+       
+      <div class="audioSection">
+        
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2>Audio</h2>
+            </div>
+              <div class="skill">
+                <h3>CPAL</h3>
+              </div>
+
+              <div class="skill">
+                <h3>DSP</h3>
+              </div>
+
+              <div class="skill">
+                <h3>JUCE</h3>
+              </div>
+
+              <div class="skill">
+                <h3>WebAudio</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Tone.js</h3>
+              </div>
+              <div class="skill">
+                <h3>RNBO</h3>
+              </div>
+              <div class="skill">
+                <h3>Open Sound Control (OSC)</h3>
+              </div>
+              <div class="skill">
+                <h3>MIDI</h3>
+              </div>
+              <div class="skill">
+                <h3>RAVE</h3>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+            </div>
+              <div class="skill">
+                <h3>Sound Design</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Pure Data</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Ableton</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Protools</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Logic Pro X</h3>
+              </div>
+              <div class="skill">
+                <h3>Reaper</h3>
+              </div>
+              <div class="skill">
+                <h3>Audio Engineering</h3>
+              </div>
+          </div>
+      </div>
+
+      <div class="embeddedSection">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2>Embedded Systems</h2>
+            </div>
+            <div class="skill">
+              <h3>STM32</h3>
+            </div>
+
+              <div class="skill">
+                <h3>ESP32</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Raspberry Pi</h3>
+              </div>
+
+              <div class="skill">
+                <h3>i2c</h3>
+              </div>
+
+              <div class="skill">
+                <h3>UART</h3>
+              </div>
+
+              <div class="skill">
+                <h3>SPI</h3>
+              </div>
+              <div class="skill">
+                <h3>CircuitPython</h3>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+            </div>
+            <div class="skill">
+                <h3>Soldering</h3>
+              </div>
+              <div class="skill">
+                <h3>Fusion 360 (CAD and PCB Design)</h3>
+              </div>
+
+              <div class="skill">
+                <h3>Lab Testing (i.e. Oscilloscopes, 
+                  Multimeters, Function Generators, etc.) </h3>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="gameDesignSection">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Game Design</h2>
+          </div>
+          <div class="skill">
+            <h3>Unity</h3>
+          </div>
+
+            <div class="skill">
+              <h3>Unreal Engine</h3>
+            </div>
+
+            <div class="skill">
+              <h3>libPd</h3>
+            </div>
+
+            <div class="skill">
+              <h3>Wwise</h3>
+            </div>
+
+            <div class="skill">
+              <h3>FMOD</h3>
+            </div>
+
+            <div class="skill">
+              <h3>Processing</h3>
+            </div>
+        </div>
+      </div>
+
+      <div class="othersSection">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Others</h2>
+          </div>
+          <div class="skill">
+            <h3>TensorFlow</h3>
+          </div>
+
+            <div class="skill">
+              <h3>PyTorch</h3>
+            </div>
+
+            <div class="skill">
+              <h3>Deep Learning</h3>
+            </div>
+
+            <div class="skill">
+              <h3>Html</h3>
+            </div>
+
+            <div class="skill">
+              <h3>CSS</h3>
+            </div>
+
+            <div class="skill">
+              <h3>p5.js</h3>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Music -->
+    <div id="music" class="musicSection section">
+      <h1 style="text-align: center;
+      transform: translateY(-120%);
+      color: white;
+      font-family: 'Times New Roman', Times, serif;">MUSIC</h1>
+      <div class="container">
+        <div style="padding-left: 5%;"class="row">
+          <div class="col-md-3">
+            <a href="https://open.spotify.com/artist/5n6aItKrWyqUhRDktNwWA5" target="_blank">
+              <img src="./img/Spotify_App_Logo.png" alt="Spotify" width="100" height="100">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://music.apple.com/us/artist/boxlight/1549556467" target="_blank">
+              <img src="./img/Apple_Music_icon.png" alt="Apple Music" width="100" height="100">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://www.amazon.com/music/player/artists/B09B47V691/boxlight" target="_blank">
+              <img src="./img/Amazon_Music_logo.png" alt="Amazon Music" width="100" height="100">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://www.youtube.com/@boxlightmusic8808" target="_blank">
+              <img src="./img/youtube_logo.png" alt="YouTube" width="100" height="100">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="contactSection section">
+      <div class="col-md-12 text-center">
+        <p class="subHeading">Do you wish to contact me?</p>
+        <h2>Send an email now.</h2>
+        <a href="mailTo:boxlightmusic@gmail.com" class="contactButton"
+          >Contact me!</a
+        >
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js"></script>
+    <script src="js/countUp-jquery.js"></script>
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
